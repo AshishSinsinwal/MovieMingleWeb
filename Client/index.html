@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Smaash</title>
+  <link rel="icon" type="image/png" href="web-icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎬 Movie Search App</h1>
+    <ul id="nav2">
+      <li><i class="fa-solid fa-user" style="color: aqua;"></i></li>
+      <li><i class="fa-solid fa-bell"></i></li>
+      <li id="search-icon"><i class="fa-solid fa-magnifying-glass" style="color: aqua;"></i></li>
+    </ul>
+  </header>
+
+  <div id="content_wrap2">
+    <div class="title">
+      <h2>Welcome.</h2>
+      <h3>Millions of movies to discover. Explore now.</h3>
+    </div>
+    <div class="search">
+      <input type="text" placeholder="Search for Movie....." id="search-input">
+      <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+  </div>
+
+  <div class="search-res" id="search-results">
+    <h1>Search Results</h1>
+    <div id="result"></div>
+    <a href="#content_wrap2" class="move-up">Move up</a>
+  </div>
+
+  <div class="trending" id="trending-section">
+    <h1>Trending Movies</h1>
+    <div id="loading" class="loading-spinner">
+        <i class="fas fa-spinner fa-spin"></i> Loading Trending movies ...
+    </div>
+    <div id="trend-res"></div>
+    <a href="#content_wrap2" class="move-up">Move up</a>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 MovieSearch by Ashish Sinsinwal</p>
+      <div class="footer-links">
+        <a href="#content_wrap2">Home</a>
+        <a href="#trending-section">Trending</a>
+      </div>
+      <div class="socials">
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="app.js?v=1.0"></script>
+
+</body>
+</html>

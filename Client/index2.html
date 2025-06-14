@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Movie</title>
+    <link rel="icon" type="image/png" href="web-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="home-link">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+            <div class="header-title">Movie Details</div>
+            <div class="header-placeholder"></div> <!-- For flex spacing -->
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="loading" class="loading-spinner">
+            <i class="fas fa-spinner fa-spin"></i> Loading movie details...
+        </div>
+
+        <div id="movie-content" style="display: none;">
+            <div id="movie-detail">
+                <div id="movie-img">
+                    <img src="" alt="" class="movie-poster">
+                    <div class="movie-rating">
+                        <i class="fas fa-star"></i>
+                        <span id="rating-value">0.0</span>
+                    </div>
+                </div>
+                <div id="movie-det"></div>
+            </div>
+
+            <div id="cast">
+                <h2><i class="fas fa-users"></i> Top Cast</h2>
+                <ul id="cast-list"></ul>
+            </div>
+
+            <div id="trailer-section">
+                <h2><i class="fas fa-play-circle"></i> Trailers & Clips</h2>
+                <div id="trailers" class="trailers-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 MovieSearch by Ashish Sinsinwal</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#trending-section">Trending</a>
+            </div>
+            <div class="socials">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app2.js?v=1.0"></script>
+</body>
+</html>

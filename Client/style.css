@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #052c65;
+  color: #fff;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#nav2 {
+  width: 150px;
+  justify-content: flex-end;
+}
+
+#content_wrap2 {
+  margin: 1rem;
+  border-radius: 1rem;
+  background-color: aquamarine;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  height: 250px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  padding: 1rem;
+  text-align: center;
+}
+
+.title h2 {
+  font-size: 4rem;
+}
+
+.search {
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.search input {
+  font-size: 1.2rem;
+  width: 80%;
+  height: 3.5rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.search input:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
+}
+
+.search button {
+  border: none;
+  padding: 1rem 1.5rem;
+  background-color: aqua;
+  border-radius: 1rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  height: 3.5rem;
+  transition: all 0.3s ease;
+}
+
+.search button:hover {
+  background-color: #00bcd4;
+}
+
+.search button i {
+  font-size: 1.5rem;
+}
+
+.loading-spinner {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.loading-spinner i {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+}
+
+#result, #trend-res {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 350px;
+  width: 250px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.img {
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.info {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.search-res {
+  display: none;
+}
+
+.trending, .search-res, footer {
+  margin: 1rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+}
+
+.trending h1, .search-res h1 {
+  background-color: #052c65;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 1rem 1rem 0 0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.trending, .search-res {
+  padding: 0 1rem 1rem;
+}
+
+.move-up {
+  display: block;
+  width: fit-content;
+  margin: 1rem auto;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #052c65;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.move-up:hover {
+  background-color: #00bcd4;
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #052c65;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: 3rem;
+  border-top: 4px solid #00bcd4;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.footer-links a, .socials a {
+  color: white;
+  text-decoration: none;
+  margin: 0 0.75rem;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover, .socials a:hover {
+  color: #00bcd4;
+}
+
+.socials a i {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  #nav2 {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .title h2 {
+    font-size: 2.5rem;
+  }
+
+  .search {
+    width: 95%;
+  }
+
+  .search input {
+    width: 70%;
+    font-size: 1rem;
+  }
+
+  .card {
+    width: 150px;
+    height: 280px;
+  }
+
+  .img {
+    height: 70%;
+  }
+}
