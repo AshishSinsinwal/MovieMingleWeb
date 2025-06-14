@@ -13,7 +13,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #052c65;
+  background: linear-gradient(90deg, #052c65,aquamarine);
   color: #fff;
   padding: 1rem;
   position: sticky;
@@ -37,7 +37,7 @@ header ul {
 #content_wrap2 {
   margin: 1rem;
   border-radius: 1rem;
-  background-color: aquamarine;
+  background: linear-gradient(90deg, aquamarine,#052c65);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   height: 250px;
   padding: 2rem;
@@ -86,7 +86,7 @@ header ul {
 .search button {
   border: none;
   padding: 1rem 1.5rem;
-  background-color: aqua;
+background: linear-gradient(90deg, aquamarine,#052c65);
   border-radius: 1rem;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -163,23 +163,39 @@ header ul {
   display: none;
 }
 
-.trending, .search-res, footer {
+ footer {
   margin: 1rem;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   border-radius: 1rem;
 }
 
-.trending h1, .search-res h1 {
-  background-color: #052c65;
-  color: #fff;
-  padding: 1rem;
-  border-radius: 1rem 1rem 0 0;
+
+
+.search-res , .trending {
+  margin: 1rem;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 1rem;
+  padding: 0; 
+  overflow: hidden;
 }
 
-.trending, .search-res {
-  padding: 0 1rem 1rem;
+.search-res h1 , .trending h1 {
+  background: linear-gradient(90deg, #052c65,aquamarine);
+  color: #fff;
+  padding: 1rem;
+  margin: 0; 
+  border-radius: 1rem 1rem 0 0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  box-sizing: border-box; 
 }
+
+
+.search-res > #result {
+  padding: 1rem;
+}
+
+
 
 .move-up {
   display: block;
@@ -197,12 +213,12 @@ header ul {
 }
 
 .move-up:hover {
-  background-color: #00bcd4;
+background: linear-gradient(90deg, aquamarine,#052c65);
   transform: scale(1.05);
 }
 
 footer {
-  background-color: #052c65;
+  background: linear-gradient(90deg, #052c65,aquamarine);
   color: white;
   padding: 2rem 1rem;
   text-align: center;

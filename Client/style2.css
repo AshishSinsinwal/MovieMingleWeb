@@ -22,7 +22,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: var(--primary-color);
+  background: linear-gradient(90deg, #052c65,aquamarine);
     padding: 1rem;
     position: sticky;
     top: 0;
@@ -156,7 +156,7 @@ header {
 }
 
 #movie-det a:hover {
-    background: var(--secondary-color);
+   background: linear-gradient(90deg, #052c65,aquamarine);
 }
 
 /* Cast Section */
@@ -194,7 +194,7 @@ header {
 }
 
 #cast-list li:hover {
-    background: var(--secondary-color);
+    background: linear-gradient(90deg, #052c65,aquamarine);
     transform: translateY(-3px);
 }
 
@@ -231,7 +231,7 @@ header {
 
 /* Footer */
 footer {
-    background-color: var(--primary-color);
+  background: linear-gradient(90deg, #052c65,aquamarine);
     color: white;
     padding: 2rem 1rem;
     text-align: center;
