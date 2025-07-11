@@ -1,6 +1,9 @@
 
 // Constants
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = window.location.hostname.includes("localhost")
+  ? "http://localhost:5000"
+  : "https://movie-mingle-app.onrender.com";
+
 const MAX_CAST_MEMBERS = 10;
 const MAX_TRAILERS = 3;
 const PLACEHOLDER_IMAGE = 'https://via.placeholder.com/500x750?text=No+Poster+Available';

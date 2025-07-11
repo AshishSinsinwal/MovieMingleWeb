@@ -1,5 +1,8 @@
 // ================ CONSTANTS ================
-const BASE_URL = "http://localhost:5000";
+const BASE_URL = window.location.hostname.includes("localhost")
+  ? "http://localhost:5000"
+  : "https://movie-mingle-app.onrender.com";
+
 const DOM_ELEMENTS = {
   searchInput: document.getElementById('search-input'),
   searchBtn: document.getElementById('search-btn'),
