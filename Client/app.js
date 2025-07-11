@@ -28,10 +28,7 @@ function setupEventListeners() {
   DOM_ELEMENTS.searchBtn.addEventListener('click', handleSearch);
   DOM_ELEMENTS.searchInput.addEventListener('keypress', handleKeyPress);
   DOM_ELEMENTS.searchIcon.addEventListener('click', handleSearchIconClick);
-  
-  // Movie card interactions
-  DOM_ELEMENTS.trendRes.addEventListener('click', handleMovieCardClick);
-  DOM_ELEMENTS.resultDiv.addEventListener('click', handleMovieCardClick);
+
 }
 
 function handleKeyPress(e) {
@@ -44,11 +41,6 @@ function handleSearchIconClick() {
   setTimeout(() => {
     DOM_ELEMENTS.searchInput.classList.remove('large');
   }, 1000);
-}
-
-function handleMovieCardClick(event) {
-  const movieDiv = event.target.closest('.card');
-  if (movieDiv) navigateToMovieDetails(movieDiv.id);
 }
 
 // ================ DATA FETCHING ================
@@ -114,6 +106,15 @@ function createMovieCard(movie) {
   
   card.appendChild(img);
   card.appendChild(info);
+
+  
+  // ✅ Attach the event here directly for testing
+  card.addEventListener('click', () => {
+    console.log("Navigating to:", `index2.html?id=${movie.id}`);
+    navigateToMovieDetails(movie.id);
+  });
+
+  
   return card;
 }
 

@@ -6,16 +6,12 @@
   <title>Movie Smaash</title>
   <link rel="icon" type="image/png" href="web-icon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>🎬 Movie Search App</h1>
-    <ul id="nav2">
-      <li><i class="fa-solid fa-user" style="color:#052c65;"></i></li>
-      <li><i class="fa-solid fa-bell" style="color: #052c65"></i></li>
-      <li id="search-icon"><i class="fa-solid fa-magnifying-glass" style="color: #052c65;"></i></li>
-    </ul>
+    <h1>🎬 MovieMingle</h1>
   </header>
 
   <div id="content_wrap2">
@@ -24,7 +20,7 @@
       <h3>Millions of movies to discover. Explore now.</h3>
     </div>
     <div class="search">
-      <input type="text" placeholder="Search for Movie....." id="search-input">
+      <input type="text" placeholder="Search Movie....." id="search-input">
       <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
     </div>
   </div>
@@ -40,13 +36,13 @@
     <div id="loading" class="loading-spinner">
         <i class="fas fa-spinner fa-spin"></i> Loading Trending movies ...
     </div>
-    <div id="trend-res"></div>
+    <div id="trend-res" ></div>
     <a href="#content_wrap2" class="move-up">Move up</a>
   </div>
 
   <footer>
     <div class="footer-content">
-      <p>© 2025 MovieSearch by Ashish Sinsinwal</p>
+      <p>© 2025 MovieMingle </p>
       <div class="footer-links">
         <a href="#content_wrap2">Home</a>
         <a href="#trending-section">Trending</a>
@@ -59,6 +55,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="app.js?v=1.0"></script>
 
 </body>
